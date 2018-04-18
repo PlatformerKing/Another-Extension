@@ -1,12 +1,12 @@
 {
 	"manifest_version": 2,
 
-	"name": "PK's Extension",
+	"name": "AutoTyper",
 	"version": "1.1.0",
-	"description": "IDEK what this is",
+	"description": "Don't know what to type? We'll do it for you!",
 
 	"browser_action": {
-		"name": "PK's Extension",
+		"name": "AutoTyper",
 		"icons": [
 			"pic.png"
 		],
