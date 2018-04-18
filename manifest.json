@@ -23,7 +23,7 @@
 	"content_scripts": [{
 
 		"js": ["test.js"],
-		"matches": ["*://*.khanacademy.org/*", "*://*.w3schools.org/*"]
+		"matches": ["*://*.khanacademy.org/*"]
 	}]
 
 }
