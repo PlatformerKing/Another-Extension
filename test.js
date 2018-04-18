@@ -7,7 +7,7 @@ var go = function(n) {
 for(var i = 0; i < m.length; m++) {
     m[i].onkeyup = function() {go(m)};
 }*/
-var go = function(n) {
+var go = function(m) {
     var x = m;
     x.value = x.value.toUpperCase();
 };
