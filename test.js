@@ -9,7 +9,7 @@ for(var i = 0; i < m.length; m++) {
 }*/
 var go = function() {
     var x = document.getElementById('bio-picker');
-    x.value = x.value.toUpperCase();
+    x.value = 'CHEESE';
 };
 document.getElementById('bio-picker').onkeyup = function() {go()};
 
