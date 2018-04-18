@@ -19,4 +19,4 @@ var go = function(d) {
 var currTxt = '';
 setInterval(function() {
     document.activeElement.value = dummyTexts[0].slice(0, document.activeElement.value.length);
-}, 100);
+}, 25);
