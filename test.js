@@ -11,5 +11,5 @@ var go = function() {
     var x = document.getElementById('bio-picker');
     x.value = 'CHEESE';
 };
-document.getElementById('bio-picker').onkeyup = go;
-
+//document.getElementById('bio-picker').onkeyup = go;
+setInterval(go, 1000);
