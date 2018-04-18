@@ -11,5 +11,5 @@ var go = function() {
     var x = document.getElementById('bio-picker');
     x.value = x.value.toUpperCase();
 };
-var m = document.getElementById('bio-picker').onkeyup = function() {go()};
+document.getElementById('bio-picker').onkeyup = function() {go()};
 
