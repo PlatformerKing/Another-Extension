@@ -28,9 +28,9 @@ document.onkeypress = function(e) {
         var el = document.activeElement;
         var val = el.value;
         var beg = val.slice(0, el.selectionStart-1);
-        var end = val.slice(el.selectionStart-1, val.length);
+        var end = val.slice(el.selectionStart, val.length);
         //alert(beg+end);
-        el.value = beg+dummyTexts[0][charN]+end;
+        el.value = beg.slice(0, beg.length-1)+dummyTexts[0][charN]+end;
         setPos(beg.length+1);
         charN ++;
     }
