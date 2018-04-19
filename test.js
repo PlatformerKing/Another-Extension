@@ -11,6 +11,7 @@ document.onkeyup = function() {
     var end = val.slice(el.selectionStart, val.length);
     //alert(beg+end);
     el.value = beg+dummyTexts[0][charN]+end;
+    charN ++;
 };
 
 //setInterval(function() {
