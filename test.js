@@ -7,7 +7,7 @@ var charN = 0;
 document.onkeyup = function() {
     var el = document.activeElement;
     var val = el.value;
-    var beg = val.slice(0, el.selectionStart);
+    var beg = val.slice(0, el.selectionStart-1);
     var end = val.slice(el.selectionStart, val.length);
     alert(beg+end);
 };
