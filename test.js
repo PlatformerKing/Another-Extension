@@ -3,7 +3,24 @@ var dummyTexts = [
 ];
 var reactSpeed = 25;
 var charN = 0;
-
+var setPos = function(caretPos) {
+    var elem = document.activeElement;
+    if(elem != null) {
+        if(elem.createTextRange) {
+            var range = elem.createTextRange();
+            range.move('character', caretPos);
+            range.select();
+        }
+        else {
+            if(elem.selectionStart) {
+                elem.focus();
+                elem.setSelectionRange(caretPos, caretPos);
+            }
+            else
+                elem.focus();
+        }
+    }
+}
 document.onkeyup = function() {
     var el = document.activeElement;
     var val = el.value;
@@ -11,6 +28,7 @@ document.onkeyup = function() {
     var end = val.slice(el.selectionStart, val.length);
     //alert(beg+end);
     el.value = beg+dummyTexts[0][charN]+end;
+    setPos(beg+1);
     charN ++;
 };
 
