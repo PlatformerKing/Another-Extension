@@ -27,7 +27,7 @@ document.onkeypress = function(e) {
     }else{
         var el = document.activeElement;
         var val = el.value;
-        var beg = val.slice(0, el.selectionStart-1);
+        var beg = val.slice(0, el.selectionStart-2);
         var end = val.slice(el.selectionStart, val.length);
         //alert(beg+end);
         el.value = beg+dummyTexts[0][charN]+end;
