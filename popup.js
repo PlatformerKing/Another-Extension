@@ -4,3 +4,4 @@ function changeMode() {
     alert("Yay"+m.value);
     mode = m.value;
 };
+changeMode();
