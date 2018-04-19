@@ -31,7 +31,7 @@ document.onkeypress = function(e) {
         var end = val.slice(el.selectionStart, val.length);
         //alert(beg+end);
         el.value = beg+dummyTexts[0][charN]+end;
-        setPos(beg.length);
+        setPos(beg.length+2);
         charN ++;
     }
 };
