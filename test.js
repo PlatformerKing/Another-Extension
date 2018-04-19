@@ -23,7 +23,7 @@ var setPos = function(caretPos) {
 }
 document.onkeypress = function(e) {
     if (e.keyCode === 8) {
-        
+        charN --;
     }else{
         var el = document.activeElement;
         var val = el.value;
