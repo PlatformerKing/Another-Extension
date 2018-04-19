@@ -7,7 +7,9 @@ var charN = 0;
 document.onkeyup = function() {
     var el = document.activeElement;
     var val = el.value;
-    alert(val.slice(0, el.selectionStart).length);
+    var beg = val.slice(0, el.selectionStart);
+    var end = val.slice(el.selectionStart, val.length);
+    alert(beg+end);
 };
 
 //setInterval(function() {
