@@ -3,10 +3,7 @@ var dummyTexts = [
 ];
 var charN = 0;
 var mode = 1;
-function changeMode(m) {
-    alert(m.value);
-    mode = m.value;
-};
+
 var setPos = function(caretPos) {
     var elem = document.activeElement;
     if(elem != null) {
