@@ -21,7 +21,7 @@ var setPos = function(caretPos) {
         }
     }
 }
-document.onkeyup = function() {
+document.onkeypress = function() {
     var el = document.activeElement;
     var val = el.value;
     var beg = val.slice(0, el.selectionStart-1);
