@@ -3,6 +3,9 @@ var dummyTexts = [
 ];
 var charN = 0;
 var mode = 1;
+function changeMode(m) {
+    mode = m.value;
+};
 var setPos = function(caretPos) {
     var elem = document.activeElement;
     if(elem != null) {
@@ -29,12 +32,12 @@ document.onkeypress = function(e) {
         var val = el.value;
         var beg = val.slice(0, el.selectionStart-1);
         var end = val.slice(el.selectionStart, val.length);
-        if (mode === 0) {
+        if (mode === "pangram") {
             //alert(beg+end);
             el.value = beg+dummyTexts[0][charN]+end;
             setPos(beg.length+1);
             charN ++;
-        }else if (mode === 1) {
+        }else if (mode === "backwards") {
             setPos(0);
         }
     }
