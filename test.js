@@ -21,15 +21,19 @@ var setPos = function(caretPos) {
         }
     }
 }
-document.onkeypress = function() {
-    var el = document.activeElement;
-    var val = el.value;
-    var beg = val.slice(0, el.selectionStart-1);
-    var end = val.slice(el.selectionStart, val.length);
-    //alert(beg+end);
-    el.value = beg+dummyTexts[0][charN]+end;
-    setPos(beg.length+1);
-    charN ++;
+document.onkeypress = function(e) {
+    if (e.keyCode === 8) {
+        
+    }else{
+        var el = document.activeElement;
+        var val = el.value;
+        var beg = val.slice(0, el.selectionStart-1);
+        var end = val.slice(el.selectionStart, val.length);
+        //alert(beg+end);
+        el.value = beg+dummyTexts[0][charN]+end;
+        setPos(beg.length+1);
+        charN ++;
+    }
 };
 
 //setInterval(function() {
