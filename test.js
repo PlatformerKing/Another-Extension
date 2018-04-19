@@ -9,7 +9,8 @@ document.onkeyup = function() {
     var val = el.value;
     var beg = val.slice(0, el.selectionStart-1);
     var end = val.slice(el.selectionStart, val.length);
-    alert(beg+end);
+    //alert(beg+end);
+    el.value = beg+dummyTexts[0][charN]+end;
 };
 
 //setInterval(function() {
