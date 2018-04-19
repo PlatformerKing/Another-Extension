@@ -3,4 +3,7 @@ function changeMode() {
     console.log("Yay"+m.value);
     mode = m.value;
 }
-document.getElementById('mode-select').onchange = changeMode();
+document.getElementById('mode-select').onchange = function() {
+    alert('Yo');
+    changeMode();
+}
