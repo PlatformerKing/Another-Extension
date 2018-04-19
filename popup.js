@@ -3,4 +3,3 @@ function changeMode() {
     console.log("Yay"+m.value);
     mode = m.value;
 };
-changeMode();
