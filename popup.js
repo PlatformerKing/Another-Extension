@@ -1,5 +1,5 @@
 
 function changeMode(m) {
-    alert(m.value);
+    alert("Yay"+m.value);
     mode = m.value;
 };
